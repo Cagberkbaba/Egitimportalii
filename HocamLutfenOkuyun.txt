@@ -1,0 +1,10 @@
+Hocam Dataların düzgün çalışması için backend ekledim. Firebaseappbackend klasörüne girip onu cmd ile açıp
+
+
+node index.js
+
+yazıp açarsanız kullanıcı dataları sağlıklı çalışacak.
+
+Umarım seversiniz chat-app de yönetici ve üye sistemi de var.
+
+Mutlu nice güzel yıllara :)

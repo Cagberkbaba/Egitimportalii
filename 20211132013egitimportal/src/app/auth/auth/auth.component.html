@@ -1,0 +1,52 @@
+<div class="row d-flex justify-content-center min-vh-100 align-items-center">
+  <div class="col-4">
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="girisyap-tab" data-bs-toggle="tab" data-bs-target="#girisyap-tab-pane" type="button" role="tab" aria-controls="girisyap-tab-pane" aria-selected="true">Giriş Yap</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="uyeol-tab" data-bs-toggle="tab" data-bs-target="#uyeol-tab-pane" type="button" role="tab" aria-controls="uyeol-tab-pane" aria-selected="false">Üye Ol</button>
+      </li>
+      
+    </ul>
+    <div class="tab-content" id="myTabContent">
+      <div class="tab-pane fade show active" id="girisyap-tab-pane" role="tabpanel" aria-labelledby="girisyap-tab" tabindex="0"><form class="d-flex flex-column justify-content-center" [formGroup]="SignInForm" (ngSubmit)="signIn()">
+        <img class="my-4 mx-auto" src="assets/egitimportalilogo.jpg" alt="Egitim Portali | Cagberk Marasli" width="128" height="128">
+        <h1 class="h3 mb-3 fw-normal">Lütfen Giriş Yapın</h1>
+    
+        <div class="form-floating mb-4">
+          <input type="email" class="form-control" id="girisyapemail" formControlName="email">
+          <label for="girisyapemail">Email address</label>
+        </div>
+        <div class="form-floating mb-4">
+          <input type="password" class="form-control" id="girisyapsifre" formControlName="password">
+          <label for="girisyapsifre">Password</label>
+        </div>
+    
+       
+        <button class="w-100 btn btn-lg btn-primary" type="submit">Giriş Yap</button>
+        <p class="mt-5 mb-3 text-muted">© 2017–2022</p>
+      </form></div>
+      <div class="tab-pane fade" id="uyeol-tab-pane" role="tabpanel" aria-labelledby="uyeol-tab" tabindex="0"><form class="" [formGroup]="SignUpForm" (ngSubmit)="signUp()" >
+        <img class="my-4 mx-auto" src="assets/egitimportalilogo.jpg" alt="Egitim Portali | Cagberk Marasli" width="128" height="128">
+        <h1 class="h3 mb-3 fw-normal">Lütfen Kayıt Olun</h1>
+    
+        <div class="form-floating mb-4">
+          <input type="email" class="form-control" id="uyeolemail" formControlName="email">
+          <label for="uyeolemail">Email address</label>
+        </div>
+        <div class="form-floating mb-4">
+          <input type="password" class="form-control" id="uyeolsifre" formControlName="password">
+          <label for="uyeolsifre">Password</label>
+        </div>
+    
+       
+        <button class="w-100 btn btn-lg btn-primary" type="submit">Kayıt Ol</button>
+        <p class="mt-5 mb-3 text-muted">© 2017–2022</p>
+      </form></div>
+     
+    </div>
+  </div>
+</div>
+
+
